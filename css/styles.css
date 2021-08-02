@@ -1,0 +1,161 @@
+/*
+--01: Typography System
+FONT SIZE SYSTEM (px)
+10 / 12 / 15 / 18 / 30 / 36 
+Font weights: 
+Default: 400
+Bold:700
+
+Fonts Paragraph: Lexend-deca
+Font Heading: Big Shoulders Display
+
+- Mobile: 375px
+- Desktop: 1440px
+
+--02: Colors
+Main Colors:
+Bright orange: hsl(31, 77%, 52%)
+Dark cyan: hsl(184, 100%, 22%)
+Very dark cyan: hsl(179, 100%, 13%)
+
+Whites:
+Transparent white (paragraphs): hsla(0, 0%, 100%, 0.75)
+Very light gray (background, headings, buttons): hsl(0, 0%, 95%)
+
+*/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+ font-family: 'Lexend Deca', sans-serif;
+ font-weight: 400;
+ font-size: 1.5rem;
+ color:  hsla(0, 0%, 100%, 0.75)
+}
+
+.card-section {
+  max-width: 1440px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 20rem;
+
+
+  padding: 0rem 3rem;
+}
+
+.card-container {
+  padding: 5rem;
+}
+
+.orange {
+  background-color: hsl(31, 77%, 52%);
+  border-top-left-radius: 9px;
+  border-bottom-left-radius: 9px;
+}
+
+.dark-cyan {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.very-dark-cyan {
+  background-color: hsl(179, 100%, 13%);
+  border-top-right-radius: 9px;
+  border-bottom-right-radius: 9px;
+}
+
+.card-icon{
+  margin-bottom: 3rem;
+}
+
+.card-heading {
+  font-family: 'Big Shoulders Display';
+  color: #fff;
+  font-size: 4rem;
+  margin-bottom: 4rem;
+  text-transform: uppercase;
+}
+
+.card-text {
+  line-height: 2;
+  margin-bottom: 8rem;
+
+}
+
+.btn-orange {
+  background-color: rgb(242, 242, 242);
+  border: none;
+  padding: 1.5rem 3rem;
+  border-radius: 100px;
+  color: hsl(31, 77%, 52%);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.btn-dark-cyan{
+  background-color: hsl(0, 0%, 95%);
+  border: none;
+  padding: 1.5rem 3rem;
+  border-radius: 100px;
+  color: hsl(184, 100%, 22%);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+
+.btn-very-dark-cyan{
+  background-color: hsl(0, 0%, 95%);
+  border: none;
+  padding: 1.5rem 3rem;
+  border-radius: 100px;
+  color: hsl(179, 100%, 13%);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.attribution {
+  
+  text-align: center;
+  padding: 1rem 3rem;
+  background-color:hsl(179, 100%, 13%);
+  text-decoration: none;
+}
+
+.attribution a {
+  text-decoration: none;
+  color: #fff;
+}
+
+@media(max-width: 90em){
+  
+
+} 
+
+@media(max-width: 24em) {
+
+  .card-section {
+    margin: 5rem 0;
+    min-width: 37.5rem;
+    grid-template-columns: 1fr;
+    padding: 0 2rem;
+  }
+
+  .orange{
+    border-top-left-radius:  9px;
+    border-top-right-radius: 9px;
+    border-bottom-left-radius: 0px;
+  }
+
+  .very-dark-cyan {
+    border-bottom-left-radius: 9px;
+    border-bottom-right-radius: 9px;
+    border-top-right-radius: 0px;
+  }
+}
